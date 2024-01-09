@@ -12,10 +12,15 @@ header{
     display: flex;
     padding: 1.1rem 1rem;
     height: 45px;
+    width: 100%;
     justify-content: space-between;
     position: fixed;
     background: #fff;
     font-weight: bold;
+}
+
+#nav{
+    display: none;
 }
 
 .inicio{
@@ -125,48 +130,115 @@ input:hover{
 }
 
 .main{
-    background: #d3f361;
+    background: #ffffff;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     padding-top: 81px;
+    box-sizing: border-box;
 }
 
 .cuerpo{
-    border: 1px solid #000;
     width: 90%;
     height: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    columns: 5;
+    column-gap: 20px;
 }
 
-.row{
-    border: 1px solid #000;
-    width: 18.59%;
-    padding-right: 0.99%;
-    padding-left: 3px;
-    flex-wrap: wrap;
-}
-
-.img{
-    object-fit: cover;
+.cuerpo .hov{
     width: 100%;
-    height: auto;
-    border-radius: 25px;
-    margin-bottom: -3px;
-}
-
-.hov{
-    width: 100%;
-    height: auto;
     margin-bottom: 10px;
-    border-radius: 25px;
+    break-inside: avoid;
 }
 
-.hov:hover{
-    background-image: url('/assets/icons/guardar.png');
-    background-repeat: no-repeat;
+.cuerpo .hov img{
+    max-width: 220px;
+    border-radius: 15px;
+    height: auto;
 }
+
+@media (max-width: 1200px){
+
+    .medio_head{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 30rem;
+        height: 45px;
+        border: 1px solid #e4e4e4;
+        border-radius: 24px;
+        background-color: #e4e4e4;
+    }
+
+    #nav{
+        display: none;
+    }
+
+    input{
+        padding-left: 10%;
+    }
+
+    .cuerpo {
+        width: calc(100% - 40px);
+        columns: 3;
+        width: 90%;
+        height: auto;
+        column-gap: 20px;
+        padding-left: 6%;
+    }
+}
+
+@media (max-width: 768px){
+
+    .inicio_head{
+        display: flex;
+        height: 100%;
+        align-items: center;
+        width: 10rem;
+        justify-content: space-around;
+        padding: 2px 7px;
+    }
+    
+    .menu{
+        display: none;
+    }
+
+    #inicio{
+        display: flex;
+    }
+
+    #nav{
+        display: flex;
+    }
+
+    .medio_head{
+        width: 18rem;
+    }
+
+    .cuerpo {
+        columns: 2;
+        width: 90%;
+        padding-left: 5%;
+        column-gap: 20px;
+    }
+}
+
+@media (max-width: 635px){
+    header{
+        display: flex;
+        padding: 1.1rem 1rem;
+        height: 45px;
+        width: 635px;
+        justify-content: space-between;
+        position: fixed;
+        background: #fff;
+        font-weight: bold;
+    }
+
+    .main{
+        width: 635px;
+    }
+}
+
