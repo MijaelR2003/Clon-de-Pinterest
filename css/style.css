@@ -12,9 +12,10 @@ header{
     display: flex;
     padding: 1.1rem 1rem;
     height: 45px;
-    width: 100%;
+    width: 98.7%;
     justify-content: space-between;
     position: fixed;
+    z-index: 10;
     background: #fff;
     font-weight: bold;
 }
@@ -53,6 +54,17 @@ header{
 .inicio_head a{
     text-decoration: none; 
     color: rgb(33, 25, 34);
+}
+
+.logo_cont{
+    width: 25px;
+    height: 25px;
+}
+
+.logo_cont a{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
 }
 
 .inicio_head a:focus{
@@ -132,11 +144,11 @@ input:hover{
 .main{
     background: #ffffff;
     width: 100%;
-    height: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    padding-top: 81px;
+    padding-top: 83px;
     box-sizing: border-box;
 }
 
@@ -144,7 +156,7 @@ input:hover{
     width: 90%;
     height: auto;
     columns: 5;
-    column-gap: 27px;
+    column-gap: 20px;
 }
 
 .cuerpo .hov{
@@ -157,12 +169,82 @@ input:hover{
     max-width: 220px;
     border-radius: 15px;
     height: auto;
+    margin-bottom: -4px;
+}
+
+.hov{
+    position: relative;
 }
 
 .menor{
-    background-color: rgba(54, 54, 54, 0.253);
-    border-radius: 15px;
+    
     width: 220px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 15px;
+    opacity: 1;
+}
+
+.min{
+    background-color: #00000054;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.min:hover{
+    opacity: 1;
+}
+
+.button{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.img_hov{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-bottom: 15px;
+}
+
+.guardar_hov{
+    width: 100px;
+    height: auto;
+    border-radius: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 0.9rem;
+    background: #e60023;
+    color: #e4e4e4;
+    font-weight: bold;
+    margin-right: 7%;
+}
+
+.descargar_hov{
+    width: 22px;
+    height: 22px;
+    padding: 5px;
+    background-color: #d1d1d1b0;
+    margin-right: 7px;
+    margin-left: 130px;
+}
+
+.menu_hov{
+    width: 22px;
+    height: 22px;
+    padding: 5px;
+    background-color: #d1d1d1b0;
 }
 
 @media (max-width: 1200px){
