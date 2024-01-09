@@ -1,0 +1,172 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 98.78vw;
+    height: 100%;
+    color: rgb(33, 25, 34);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+}
+
+header{
+    display: flex;
+    padding: 1.1rem 1rem;
+    height: 45px;
+    justify-content: space-between;
+    position: fixed;
+    background: #fff;
+    font-weight: bold;
+}
+
+.inicio{
+    width: 25px;
+    height: 25px;
+}
+
+.inicio_head{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    width: 17rem;
+    justify-content: space-around;
+    padding: 2px 7px;
+}
+
+.menu{
+    display: flex;
+    height: 120%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    width: 30%;
+}
+
+#inicio, #crear{
+    width: 20%;
+}
+
+.inicio_head a{
+    text-decoration: none; 
+    color: rgb(33, 25, 34);
+}
+
+.inicio_head a:focus{
+    color: #fff;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.medio_head{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 53rem;
+    height: 45px;
+    border: 1px solid #e4e4e4;
+    border-radius: 24px;
+    background-color: #e4e4e4;
+}
+
+input{
+    background-image: url('/assets/icons/buscar.png');
+    background-repeat: no-repeat;
+    background-position:1.5%;
+    background-size: 25px;
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+    border: none;
+    outline: none; 
+    background-color: #e4e4e4;
+    padding-left: 5%;
+}
+
+input:hover{
+    background: #c5c5c5;
+    background-image: url('/assets/icons/buscar.png');
+    background-repeat: no-repeat;
+    background-position:1.5%;
+    background-size: 25px;
+}
+
+.final_head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12rem;
+    justify-content: space-evenly;
+}
+
+.final{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 19%;
+    height: 90%;
+}
+
+.final:hover{
+    background: #e4e4e4;
+    border-radius: 50%;
+}
+
+.final:focus{
+    background: #000;
+}
+
+#navar{
+    height: 70%;
+    width: 15%;
+}
+
+.main{
+    background: #d3f361;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-top: 81px;
+}
+
+.cuerpo{
+    border: 1px solid #000;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.row{
+    border: 1px solid #000;
+    width: 18.59%;
+    padding-right: 0.99%;
+    padding-left: 3px;
+    flex-wrap: wrap;
+}
+
+.img{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+    margin-bottom: -3px;
+}
+
+.hov{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 25px;
+}
+
+.hov:hover{
+    background-image: url('/assets/icons/guardar.png');
+    background-repeat: no-repeat;
+}
